@@ -1,0 +1,26 @@
+package:
+ name: bam-readcount
+ version: 0.8.0
+
+build:
+ number: 1
+
+source: 
+ git_url: https://github.com/genome/bam-readcount
+ git_version: v0.8.0
+
+requirements:
+ build:
+  - python
+  - samtools 
+  - boost
+  - cmake
+
+ run:
+  - python
+  - samtools
+
+about:
+ license: "MIT"
+
+

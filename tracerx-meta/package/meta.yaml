@@ -1,0 +1,34 @@
+package:
+ name: tracerx-meta
+ version: 1.0.0
+
+source:
+ path: ../src/
+
+build:
+ number: 1
+
+requirements:
+ build:
+  - python
+  - perl 5.22.0
+
+ run:
+  - python 
+  # These come from the r channel
+  - r-essentials
+  # These come from the bioconda channel
+  - bwa
+  - samtools
+  - picard
+  - fastqc
+  - varscan
+  - gatk
+  - platypus-variant
+  - razers3
+  - perl 5.22.0
+  - java-jdk
+  # These provided by MJH
+
+about:
+ license: "Various, see individual packages"
